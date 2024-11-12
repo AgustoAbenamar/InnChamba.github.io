@@ -1,0 +1,905 @@
+.Barra_Navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #151241;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 3100;
+}
+
+.Boton_Idioma, .BotonDonacionEspanol {
+    position: relative;
+    top: -6vh;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 2200;
+}
+
+.LogoINNCHAMBA {
+    position: relative;
+    top: -1vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+.Text_BarraNavegacion {
+    position: relative;
+    top: -6vh;
+    margin: 0 15px;
+    cursor: pointer;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    z-index: 3100;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Menu_Lenguaje {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: linear-gradient(135deg, #f9f9f9 0%, #eaeaea 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.Cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    z-index: 1100;
+}
+
+.Lenguaje_Opcion {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5.5px;
+}
+
+.Lenguaje_Opcion img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.Lenguaje_Opcion:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.ImagenEspanol {
+    height: 45px;
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+    animation: parpadeo 1s infinite;
+}
+
+@media (max-width: 768px) {
+    .Barra_Navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Text_BarraNavegacion {
+        margin: 10px 0;
+    }
+}
+
+.Imagen_Principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.Imagen_Principal_Dos {
+    position: absolute;
+    top: calc(100% + -220px);
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2000;
+}
+
+.Contenedor_Circulos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.Ellipse-1 {
+    position: absolute;
+    top: 72.5vh;
+    left: 125.5vh;
+    width: 112px;
+    height: 112px;
+    background-color: #80b660;
+    border-radius: 50%;
+}
+
+.Ellipse-2 {
+    position: absolute;
+    top: 36vh;
+    left: 147vh;
+    width: 523px;
+    height: 523px;
+    background-color: #80b660;
+    border-radius: 50%;
+}
+
+.Ellipse-3 {
+    position: absolute;
+    top: 17vh;
+    left: 132vh;
+    width: 228px;
+    height: 228px;
+    background-color: #80b660;
+    border-radius: 50%;
+}
+
+.Ellipse-1, .Ellipse-2, .Ellipse-3 {
+    animation: fadeIn 2.5s forwards;
+}
+
+.Imagen_INICIO {
+    position: absolute;
+    top: 5vh; 
+    left: 64%;
+    z-index: 1000;
+    width: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .Contenedor_Circulos,
+    .Imagen_INICIO {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.DEJAR_UNA_HUELLA {
+    position: absolute;
+    top: 30vh;
+    left: 38vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: transparent;
+    font-size: 64px;
+    letter-spacing: -0.95px;
+    line-height: 80px;
+}
+
+.Texto_DejarHuella {
+    color: #151241;
+    letter-spacing: -0.60px;
+    z-index: 2;
+}
+  
+.Texto_Manos {
+    color: #3b7018;
+    letter-spacing: -0.60px;
+    z-index: 2;
+}
+
+.BotonGrupoMensaje {
+    position: absolute;
+    width: 35vh;
+    top: 58vh;
+    left: 38vh;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Area_Capacitacion {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100vh;
+    z-index: 3000;
+}
+
+.Grupo_Texto_Area {
+    position: relative;
+    top: -15vh;
+    left: 30vh;
+    transform: translate(-50%, -50%);
+}
+
+.Texto_Area {
+    top: 0;
+    left: 0;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+  
+.Text_Conoce {
+    top: 0;
+    left: 0;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.35px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Imagen_Tamaño {
+    width: 345px;
+    height: 345px;
+    transition: opacity 0.3s ease;
+}
+
+.Area {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    overflow: hidden;
+}
+
+.Area_Uno { top: 0; left: 5vh; }
+.Area_Dos { top: 0; left: 45vh; }
+.Area_Tres { top: 0; left: 85vh; }
+.Area_Cuatro { top: 0; left: 125vh; }
+.Area_Cinco { top: 0; left: 165vh; }
+
+.Area:hover .Imagen_Tamaño {
+    opacity: 0;
+}
+
+.Area_Uno:hover .Text_Areas {
+    background: linear-gradient(to bottom, #d2dc6b, #c2d76b, #a9d16e);
+    opacity: 1;
+}
+
+.Area_Dos:hover .Text_Areas {
+    background: linear-gradient(to bottom, #9698DA, #AA98C7, #B799BF);
+    opacity: 1;
+}
+
+.Area_Tres:hover .Text_Areas {
+    background: linear-gradient(to bottom, #36beca, #5db6d6, #81b0e3);
+    opacity: 1;
+}
+
+.Area_Cuatro:hover .Text_Areas {
+    background: linear-gradient(to bottom, #ffe56e, #ffd962, #ffcf57);
+    opacity: 1;
+}
+
+.Area_Cinco:hover .Text_Areas {
+    background: linear-gradient(to bottom, #ffac63, #fe995c, #ffa251);
+    opacity: 1;
+}
+
+.Text_Areas {
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    border-radius: 50%;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Rectangulo_Uno {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 140vh;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    background-color: #48D4CC;
+    z-index: 3050;
+}
+
+.Numero37 {
+    font-size: 120px;
+    font-weight: 800;
+    font-family: "Montserrat", Helvetica;
+    color: #E6E6E6;
+    margin-right: 20px;
+}
+
+.Texto_Azulado {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", Helvetica;
+    color: #245D62;
+    margin-right: 10px;
+}
+
+.Texto_Blanco {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", Helvetica;
+    color: #E6E6E6;
+    margin-right: 10px;
+}
+
+.Imagen_PC {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.Rectangulo_Dos {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 217vh;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #48D4CC;
+    z-index: 20;
+}
+
+.Numero100 {
+    font-size: 120px;
+    font-weight: 800;
+    font-family: "Montserrat", Helvetica;
+    color: #E6E6E6;
+    margin-right: 20px;
+}
+
+.Imagen_Hospital {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.Rectangulo_Tres {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 295vh;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #48D4CC;
+    z-index: 20;
+}
+
+.Imagen_Curso {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.Grupo_AyudaImportante {
+    position: relative;
+    top: 375vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    line-height: 35px;
+}
+
+.Texto_Titulo_Rojo{
+    font-weight: 800;
+    color: #f84066;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: -0.50px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Text_Normal{
+    color: #000000;
+    letter-spacing: -0.05px;
+}
+
+.Text_Negritas{
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: -0.05px;
+}
+
+.Text_Contacta {
+    font-weight: 800;
+    color: #229b9d;
+    font-size: 24px;
+    letter-spacing: -0.10px;
+}
+
+.Rectangulo_Donativos {
+    position: relative;
+    top: 378vh;
+    max-width: 100vw;
+    padding: 102px;
+    background-color: #7CB05B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.Imagen_Donativo {
+    position: absolute;
+    top: -10vh;
+    left: 0vh;
+    width: 100%;
+    max-width: 590px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Text_Titulo_Donativo{
+    position: absolute;
+    top: 2vh;
+    color: #E6E6E6;
+    font-family: "Montserrat", Helvetica;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Text_Subtitulo_Donativo {
+    position: absolute;
+    top: 8vh;
+    color: #E6E6E6;
+    font-family: "Montserrat", Helvetica;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Text_Titulo_Donativo {
+    font-size: 32px;
+}
+
+.Text_Subtitulo_Donativo {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group label {
+    font-size: 14px;
+}
+
+.Boton_Donacion {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Text_Aliados{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 382.5vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: -0.55px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Aliados {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 392.5vh;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.Cuadro_Aliados {
+    position: relative;
+    width: 110vh;
+    height: 117.3vh;
+    background: linear-gradient(180deg, 
+        rgb(56, 161, 167) 0%, 
+        rgb(71, 195, 184) 50%, 
+        rgb(89, 235, 205) 100%);
+}
+
+.Imagen_Aliados {
+    position: relative;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    float: right;
+}
+
+.Text_Agradecimiento {
+    position: absolute;
+    top: 4vh;
+    left: 10vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.70px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Text_Nuestros{
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.55px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Contenedor_Aliados {
+    position: absolute;
+    top: 20vh;
+    left: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+.Ellipse_Aliados {
+    position: relative;
+    width: 640px;
+    height: 610px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Circulo-aliados {
+    width: 540px;
+    height: 540px;
+    background-color: #fff1f1;
+    border-radius: 60%;
+    box-shadow: 0px 4px 4px #00000040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element img {
+    width: auto;
+    height: auto;
+}
+
+.Boton-Der {
+    position: absolute;
+    left: 50vh; 
+    height: 136px;
+    background-color: #f7feff;
+    border-radius: 68px;
+    box-shadow: 0px 4px 4px #00000040;
+    cursor: pointer;
+}
+
+.Imagen_Boton {
+    position: absolute;
+    left: 70px;
+    object-fit: cover;
+}
+
+.Text_SinEllos {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 100vh;
+    left: 10vh;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 800;
+    color: #151241;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.55px;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+.Pie_pagina {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    background-color: #3A358F;
+    top: 400vh;
+    left: 0;
+}
+
+.Imagen_GrupoReunion {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Barra_De_Navegacion_Footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 20%;
+    left: 15%;
+    z-index: 3;
+}
+
+.Text_Botones_Navegacion {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    color: #E3ECEC;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: -0.20px;
+    line-height: normal;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.Text_Botones_Navegacion:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.Text_Botones_Navegacion:hover {
+    color: #3498db;
+    transition: background-color 0.3s ease;
+}
+
+.Grupo_Redes_Sociales {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 20%;
+    left: 35%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.Nombre_RedSocial {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E3ECEC;
+    text-align: center;
+    letter-spacing: -0.20px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.Logo {
+    width: 40px;
+    height: 40px;
+}
+
+.Logo_X {
+    position: absolute;
+    TOP: 2vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo_Instagram {
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo_Facebook {
+    position: absolute;
+    top: 18vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Forma_Contacto {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 20%;
+    left: 52.5%;
+    z-index: 4;
+}
+
+.Titulo_Contacto {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    font-size: 22px;
+    font-weight: bold;
+    color: #E3ECEC;
+    letter-spacing: -0.20px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.Text_Contacto {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E3ECEC;
+    letter-spacing: -0.20px;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.Logo_INNCHAMBA {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 15%;
+    left: 77%;
+    z-index: 4;
+}
+
+.Dirrecion {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: cover;
+    top: 52%;
+    left: 72.5%;
+    z-index: 4;
+}
+
+.Dirrecion_INNCHAMBA {
+    font-family: "Montserrat", Helvetica;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E3ECEC;
+    text-align: center;
+    letter-spacing: -0.20px;
+    line-height: normal;
+    white-space: nowrap;
+}

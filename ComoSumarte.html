@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_ComoSumarte.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+    <title>INN-CHAMBA</title>
+  </head>
+  <body>
+    <header>
+      <div class="Barra_Navegacion">
+        <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Index')">INICIO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+        <img class="BotonDonacionEspanol" onclick="RedirigirDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+        <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+          <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+        </div>    
+        <div id="MenuLenguaje" class="Menu_Lenguaje">
+          <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+            <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+            <span>Español</span>
+          </div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+            <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+            <span>Inglés</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="rectangle-uno">
+        <div class="collage-donacion-uno"></div>
+        <span class="donativo-deposito-transferencia"
+          >DONATIVO POR DEPÓSITO O TRANSFERENCIA</span
+        >
+        <div class="vector-donativo"></div>
+        <span class="donativos-deducibles-impuestos"
+          >¿Sabías que tus donativos son deducibles de impuestos?</span
+        >
+        <div class="enviar-comprobante-datos-fiscales">
+          <span class="correo-contacto"
+            >Sólo debes enviar tu comprobante y datos fiscales al correo: </span
+          ><span class="contacto-email">contacto@innchamba.org.mx</span>
+        </div>
+        <span class="donate-here">Donate Here</span
+        ><span class="hacer-donativo">Hacer donativo</span>
+        <div class="rectangle-usa"></div>
+        <div class="rectangle-donativo"></div>
+      </div>
+      <div class="rectangle-dos">
+        <div class="collage-donacion-dos"></div>
+        <div class="flex-column-c">
+          <div class="vector-donativo-1">
+            <span class="donativo-especie">DONATIVO POR ESPECIE</span>
+          </div>
+          <span class="apoyarnos-donando">Puedes apoyarnos donando:</span
+          ><span class="lista-donativos"
+            >Ropa en buen estado.<br />Alimento para mascota.<br />Alimento
+            precederos.<br />Artículos de oficina y papelería (plumas, libretas,
+            lápices, hojas, etc.)<br
+          /></span>
+        </div>
+        <div class="flex-column">
+          <div class="ellipse-uno"></div>
+          <div class="ellipse-dos"></div>
+          <div class="ellipse-tres"></div>
+          <div class="ellipse-cuatro"></div>
+        </div>
+      </div>
+      <div class="rectangle-tres">
+        <div class="collage-donacion-tres"></div>
+        <div class="flex-column-ccc">
+          <div class="vector-servicio">
+            <span class="servicio-social">SERVICIO SOCIAL</span>
+          </div>
+          <div class="formar-equipo-talento">
+            <span class="aportar-tiempo-libre"
+              >Te interesa formar parte del equipo aportando tu talento
+              altruista y poco de tu tiempo libre y al mismo tiempo </span
+            ><span class="liberar-servicio-social"
+              >liberar tu servicio social</span
+            ><span class="horario-mixto">
+              con un horario mixto acudiendo 2 veces por mes a nuestras oficinas
+              y el demás tiempo apoyando desde vía remota.
+            </span>
+          </div>
+          <div class="elegir-horarios">
+            <span class="text-e">Tú eliges los horarios </span
+            ><span class="que-mejor-te"
+              >que mejor te convengan sin que perjudiquen tus actividades
+              académicas.</span
+            >
+          </div>
+          <div class="comunicate-al-correo">
+            <span class="comunicate-al">Comunícate al </span
+            ><span class="text-11">5548600861</span
+            ><span class="comunicate-al-2"> o al correo:<br /></span
+            ><span class="text-13">contacto @innchamba.org.mx</span>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-cuatro">
+        <div class="collage-donacion-cuatro"></div>
+        <div class="flex-column-aea">
+          <div class="vector-manos">
+            <span class="en-tus-manos">VOLUNTARIADO</span>
+          </div>
+          <span class="te-interesa-formar"
+            >¿Te interesa formar parte del equipo aportando tu talento altruista
+            y poco de tu tiempo libre?</span
+          ><span class="esta-convocatoria-incluye"
+            >Esta convocatoria, invita a profesionistas y especialistas en temas
+            de educación, salud y vida a donar su tiempo, talento y conocimiento
+            en beneficio de las infancias. NO CONTEMPLA PAGOS EN
+            HONORARIOS.</span
+          >
+          <div class="comunicate-al-correo-3">
+            <span class="comunicate-al-4">Comunícate al </span
+            ><span class="text-18">5548600861 </span
+            ><span class="comunicate-al-5">o al correo: <br /></span
+            ><span class="text-1a">contacto @innchamba.org.mx</span>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-cinco">
+        <div class="collage-donacion-cinco"></div>
+        <div class="flex-column-e">
+          <div class="cada-ano-inn">
+            <span class="chamba">Cada año INN</span
+            ><span class="text-1c"> </span><span class="chamba-6">CHAMBA</span
+            ><span class="text-1e"> I.A.P.</span
+            ><span class="chamba-7">
+              organiza eventos para recaudar fondos dirigidos al cumplimiento de
+              nuestros proyectos, te invitamos a divertirte en nuestras
+              diferentes actividades que tenemos planeadas para ti y al mismo
+              tiempo apoyarás a nuestros beneficiarios.<br /><br
+            /></span>
+          </div>
+          <span class="en-inn-chamba"
+            >En INN CHAMBA I.A.P. realizamos eventos de recaudación de fondos
+            para llegar a nuestra meta anual. </span
+          ><span class="donativo-por-recaudacion"
+            >DONATIVO POR RECAUDACIÓN DE FONDOS</span
+          >
+          <div class="vector-donativo-8"></div>
+        </div>
+      </div>
+      <div class="rectangle-no-pierdas">
+        <div class="no-te-pierdas-estos">
+          <span class="rifas-loterias-subastas"
+            >NO TE PIERDAS ESTOS EVENTOS QUE REALIZAMOS PUEDEN SER:<br /></span
+          ><span class="eventos-musicales-eventos"
+            >RIFAS, LOTERÍAS, SUBASTAS, DEGUSTACIONES, EVENTOS MUSICALES,
+            EVENTOS CULTURALES, ENTRE OTROS.</span
+          >
+        </div>
+      </div>
+      <div class="grupo-presentacion"></div>
+      <div class="cuadro-inicio"></div>
+      <div class="flex-row-abc">
+        <div class="imagen-equ"></div>
+        <div class="imagen-fondo"></div>
+        <div class="vector-sumarte">
+          <span class="como-sumarte-14">¿CÓMO SUMARTE?</span>
+        </div>
+        <div class="donativos-actividades-inn-chamba">
+          <span class="donativos">Los donativos </span
+          ><span class="pieza-fundamental">son pieza fundamental</span
+          ><span class="formas-apoyo">
+            para el cumplimiento de nuestras actividades en INN CHAMBA I.A.P. ,
+            sin embargo, existen otras formas de apoyo.</span
+          >
+        </div>
+      </div>
+      <div class="flex-row-b">
+        <div class="rectangle-cincp">
+          <div class="rectangle-dos-15">
+            <span class="donativo-por-especie">DONATIVO POR ESPECIE</span>
+            <div class="imagen-donacion-dos"></div>
+          </div>
+          <div class="rectangle-tres-16">
+            <div class="vector-dos"></div>
+            <div class="flex-column-ff">
+              <span class="servicio-social-17">SERVICIO SOCIAL</span>
+              <div class="imagen-donacion-tres"></div>
+            </div>
+          </div>
+          <div class="rectangle-cinco-18">
+            <span class="recaudacion-fondos">RECAUDACIÓN DE FONDOS</span>
+            <div class="imagen-donacion-cinco"></div>
+          </div>
+          <div class="rectangle-uno-19">
+            <span class="donativo-deposito-transferencia-1a"
+              >DONATIVO POR DEPÓSITO O TRANSFERENCIA</span
+            >
+            <div class="imagen-donacion-uno"></div>
+          </div>
+          <div class="rectangle-tres-1b">
+            <div class="imagen-donacion-tres-1c"></div>
+          </div>
+          <div class="vector-tres"></div>
+          <div class="vector-tres-1d"></div>
+          <div class="vector-uno"></div>
+          <span class="voluntariado">VOLUNTARIADO</span>
+        </div>
+        <div class="rectangle-fronteras">
+          <span class="momento-actuar-compartir"
+            >ES MOMENTO DE ACTUAR, ES MOMENTO DE COMPARTIR</span
+          >
+          <div class="imagen-ninos"></div>
+          <span class="fronteras-causas-comunes"
+            >LAS FRONTERAS SE DESDIBUJAN ANTE CAUSAS COMUNES
+          </span>
+        </div>
+      </div>
+      <div class="flex-row-c-1e">
+        <div class="imagen-fondos"></div>
+        <div class="imagen-recaudando"></div>
+        <div class="imagen-productas"></div>
+      </div>
+      <div class="flex-row-bb">
+        <div class="imagen-mon"></div>
+        <div class="imagen-donacion-tres-1f"></div>
+        <div class="rectangle-final">
+          <div class="flex-column-dc">
+            <span class="productos-causa-inn-chamba"
+              >Al adquirir los productos con causa que INN CHAMBA I.A.P. tiene
+              para ti ayudas a mantenernos fuertes como fundación ya que lo
+              recaudado será donado en su totalidad al cumplimiemto de nuestro
+              objeto social.</span
+            ><span class="inn-chamba-recursos"
+              >INN CHAMBA I.A.P. se encarga de enfocar sus esfuerzos y recursos
+              a la población que más necesite capacitarse en las diferentes
+              materias que impartimos. Sus donaciones, contribuciones y aportes
+              nos permiten seguir afianzando nuestros servicios, tener una mejor
+              cobertura, fortalecer los existentes e implementar los que hasta
+              el momento no hemos podido. InnChamba en su carácter de donataria
+              autorizada ante el SAT, nos permite expedir recibos deducibles de
+              impuestos.</span
+            >
+          </div>
+          <div class="flex-column-fa">
+            <span class="momento-divertido-contribuir"
+              >Para acudir a ellos y a parte de pasar un momento divertido
+              ayudas a contribuir.</span
+            >
+            <div class="regroup-20">
+              <div class="logo-facebook-21" onclick="RedirigirPagina('Instagram')"></div>
+              <span class="facebook-22" onclick="RedirigirPagina('Instagram')">FACEBOOK</span>
+            </div>
+            <span class="redes-sociales-apartar-lugares"
+              >Estate pendiente de nuestras redes sociales para apartar tus
+              lugares:</span
+            >
+            <div class="logo-insta-23" onclick="RedirigirPagina('Instagram')"></div>
+            <span class="instagram-24" onclick="RedirigirPagina('Instagram')">INSTAGRAM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="Pie_pagina">
+      <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+      <div class="Barra_De_Navegacion_Footer">
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Index')">INICIO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+      </div>
+      <div class="Grupo_Redes_Sociales">
+        <div class="Logo_X" onclick="RedirigirPagina('X')">
+          <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+          <span class="Nombre_RedSocial">TWITTER</span>
+        </div>
+        <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+          <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+          <span class="Nombre_RedSocial">INSTAGRAM</span>
+        </div>
+        <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+          <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+          <span class="Nombre_RedSocial">FACEBOOK</span>
+        </div>
+      </div>
+      <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+      <div class="Forma_Contacto">
+        <p class="Titulo_Contacto"><br>Contáctanos</p>
+        <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+        <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+        <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+      </div>
+      <div class="Dirrecion">
+        <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+      </div>
+    </footer>
+    <script src="./script/script_ComoSumarte.js"></script>
+  </body>
+</html>

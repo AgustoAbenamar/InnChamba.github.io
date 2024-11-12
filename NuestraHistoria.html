@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_NuestraHistoria.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+  </head>
+  <body>
+    <header>
+      <div class="Barra_Navegacion">
+          <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+          <p class="Text_BarraNavegacion" onclick="Redirigir('Index')">INICIO</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+          <img class="BotonDonacionEspanol" onclick="ScrollToDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+          <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+              <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+          </div>
+          
+          <div id="MenuLenguaje" class="Menu_Lenguaje">
+              <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+              <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+                  <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+                  <span>Español</span>
+              </div>
+              <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+                  <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+                  <span>Inglés</span>
+              </div>
+          </div>
+      </div>
+  </header>
+    <div class="NUESTRA-HISTORIA">
+      <div class="div">
+        <div class="text-servicio">
+          <div class="overlap-group">
+            <div class="rectangle-servicios"></div>
+            <p class="NUESTROS-SERVICIOS">
+              <span class="text-wrapper">NUESTROS SERVICIOS - PROYECTOS FILANTROPICOS<br /></span>
+              <span class="span"
+                >Somos una organización que promueve la educación por medio de capacitaciones, facilitando procesos
+                sociales integrales con la población más vulnerable; con el apoyo de aliados, cooperantes y los
+                proyectos propios; lo cual permite impactar a más y más beneficiarios.
+              </span>
+              <span class="text-wrapper-2">Te invitamos a sumarte.</span>
+            </p>
+            <img class="imagen-corazon" src="./img/NuestraHistoria/imagencorazon.png" />
+          </div>
+        </div>
+        <div class="text-apoyo">
+          <div class="overlap">
+            <div class="rectangle-apoyo"></div>
+            <p class="INN-CHAMBA-i-a-p-se">
+              <span class="text-wrapper-3"
+                >INN CHAMBA&nbsp;&nbsp;I.A.P. se encarga de enfocar sus esfuerzos y recursos a la población que más
+                necesite capacitarse en las diferentes materias que impartimos. Sus
+              </span>
+              <span class="text-wrapper-4">donaciones, contribuciones y aportes</span>
+              <span class="text-wrapper-5">&nbsp;</span>
+              <span class="text-wrapper-3">nos </span>
+              <span class="text-wrapper-4"
+                >permiten seguir afianzando nuestros servicios, tener una mejor cobertura, fortalecer nuestras
+                actividades asistenciales existentes e implementar nuevas</span
+              >
+              <span class="text-wrapper-3">
+                que hasta el momento no hemos podido. InnChamba en su carácter de donataria autorizada ante el SAT, nos
+                permite expedir recibos deducibles de impuestos.</span
+              >
+            </p>
+            <img class="imagen-apoyo" src="./img/NuestraHistoria/imagenapoyo.png" />
+          </div>
+        </div>
+        <div class="collage-valores">
+          <div class="overlap-2">
+            <div class="ellipse-principal"></div>
+            <img class="grupo-nueve" src="./img/NuestraHistoria/gruponueve.png" />
+            <img class="grupo-ocho" src="./img/NuestraHistoria/grupoocho.png" />
+            <img class="grupo-siete" src="./img/NuestraHistoria/gruposiete.png" />
+            <img class="grupo-seis" src="./img/NuestraHistoria/gruposeis.png" />
+            <img class="grupo-cinco" src="./img/NuestraHistoria/grupocinco.png" />
+            <img class="grupo-centro" src="./img/NuestraHistoria/grupocentro.png" />
+            <img class="grupo-cuatro" src="./img/NuestraHistoria/grupocuatro.png" />
+            <img class="grupo-tres" src="./img/NuestraHistoria/grupotres.png" />
+            <img class="grupo-dos" src="./img/NuestraHistoria/grupodos.png" />
+            <img class="grupo-uno" src="./img/NuestraHistoria/grupouno.png" />
+          </div>
+          <div class="VALORES-DEL-TRABAJO">VALORES<br />DEL TRABAJO:</div>
+        </div>
+        <div class="text-justificacion">
+          <p class="reconocemos-que-las">
+            <span class="text-wrapper-6">R</span>
+            <span class="text-wrapper-7"
+              >econocemos que las cosas no van bien cuando el suelo, el agua, el aire y todos los seres vivos están bajo
+              amenaza permanente que ponen en peligro no solo a los ecosistemas sino a los humanos. Conocer los
+              problemas ambientales es el primer paso para concienciarnos de su importancia y reclamar y participar en
+              acciones para la protección y recuperación de la naturaleza. Entre los problemas ambientales que mas
+              destacan encontramos: el cambio climático, contaminación, deforestación, degradación del suelo, energía,
+              escasez de agua, extinción de especies y pérdida de biodiversidad, invasión y trafico ilegal de especies,
+              residuos y sobrepesca.</span
+            >
+          </p>
+          <img class="imagen-jus-cuatro" src="./img/NuestraHistoria/imagenjuscuatro.png" />
+          <img class="imagen-jus-tres" src="./img/NuestraHistoria/imagenjustres.png" />
+          <p class="p">
+            <span class="text-wrapper-6">R</span>
+            <span class="text-wrapper-7"
+              >econocemos que las cosas no van bien cuando el suelo, el agua, el aire y todos los seres vivos están bajo
+              amenaza permanente que ponen en peligro no solo a los ecosistemas sino a los humanos. Conocer los
+              problemas ambientales es el primer paso para concienciarnos de su importancia y reclamar y participar en
+              acciones para la protección y recuperación de la naturaleza. Entre los problemas ambientales que mas
+              destacan encontramos: el cambio climático, contaminación, deforestación, degradación del suelo, energía,
+              escasez de agua, extinción de especies y pérdida de biodiversidad, invasión y trafico ilegal de especies,
+              residuos y sobrepesca.</span
+            >
+          </p>
+          <div class="overlap-3">
+            <div class="overlap-3">
+              <img class="imagen-jus-dos" src="./img/NuestraHistoria/imagenjusdos.png" />
+              <img class="imagen-jus-uno" src="./img/NuestraHistoria/imagenjusuno.png" />
+              <p class="reconocemos-que-las-2">
+                <span class="text-wrapper-6">R</span>
+                <span class="text-wrapper-7"
+                  >econocemos que las cosas no andan bien en un país donde hay campesinos sin tierras, donde estas se
+                  encuentran mal repartidas, algunas son explotadas para consumo de E.U.A., algunas de estas tierras
+                  están infrautilizadas, entre otras problemáticas, trayendo como consecuencias la migración de los
+                  campesinos a otros lugares, ejerciendo otras profesiones.</span
+                >
+              </p>
+            </div>
+            <p class="reconocemos-que-las-3">
+              <span class="text-wrapper-8">R</span>
+              <span class="text-wrapper-9">econocemos que las cosas no van bien cuando hay aproximadamente </span>
+              <span class="text-wrapper-10">42.6 millones de mexicanos sumidos en la pobreza</span>
+              <span class="text-wrapper-9"
+                >, dónde los más afectados son niños, mujeres, adultos mayores, gente del campo y personas con
+                capacidades diferentes.</span
+              >
+            </p>
+            <div class="text-wrapper-11">JUSTIFICACIÓN:</div>
+          </div>
+        </div>
+        <div class="overlap-4">
+          <div class="text-historia">
+            <div class="overlap-5">
+              <img class="imagen-unidos" src="./img/NuestraHistoria/imagenunidos.png" />
+              <div class="overlap-group-2">
+                <img class="vector-historia" src="./img/NuestraHistoria/vectorhistoria.png" />
+                <p class="INN-CHAMBA-i-a-p">
+                  <span class="text-wrapper-12"
+                    >INN CHAMBA I.A.P., nace como una organización sin fines de lucro en el 2017 bajo el lema
+                  </span>
+                  <span class="text-wrapper-13">“Donde las ideas tienen consecuencias”</span>
+                  <span class="text-wrapper-12"
+                    >. Dicho emprendimiento surgió de la necesidad de un cambio en la forma de resolver problemas
+                    comunes dentro de la sociedad, problemas que tienen un accionar global y hoy en día en ningún Estado
+                    puede resolver por sí mismo.</span
+                  >
+                </p>
+                <p class="div-2">
+                  <span class="text-wrapper-14">NUESTRA </span> <span class="text-wrapper-15">HISTORIA</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="Pie_pagina">
+      <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+
+      <div class="Barra_De_Navegacion_Footer">
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('Index')">INICIO</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+      </div>
+
+      <div class="Grupo_Redes_Sociales">
+          <div class="Logo_X" onclick="RedirigirPagina('X')">
+              <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+              <span class="Nombre_RedSocial">TWITTER</span>
+          </div>
+          <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+              <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+              <span class="Nombre_RedSocial">INSTAGRAM</span>
+          </div>
+          <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+              <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+              <span class="Nombre_RedSocial">FACEBOOK</span>
+          </div>
+      </div>
+
+      <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+
+      <div class="Forma_Contacto">
+          <p class="Titulo_Contacto"><br>Contáctanos</p>
+          <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+          <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+          <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+      </div>
+
+      <div class="Dirrecion">
+          <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+      </div>
+  </footer>
+  <script src="./script/script_NuestraHistoria.js"></script>
+  </body>
+</html>

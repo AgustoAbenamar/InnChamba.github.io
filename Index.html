@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_Inicio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+    <title>INN-CHAMBA</title>
+</head>
+    <body>
+        <header>
+            <div class="Barra_Navegacion">
+                <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+                <p class="Text_BarraNavegacion" onclick="Redirigir('Index')">INICIO</p>
+                <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+                <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+                <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+                <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+                <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+                <img class="BotonDonacionEspanol" onclick="ScrollToDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+                <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+                    <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+                </div>
+                <div id="MenuLenguaje" class="Menu_Lenguaje">
+                    <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+                    <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+                        <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+                        <span>Español</span>
+                    </div>
+                    <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+                        <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+                        <span>Inglés</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <img class="Imagen_Principal" src="./img/Inicio/ImagenFondoPrincipal.svg" />
+        <img class="Imagen_Principal_Dos" src="./img/Inicio/ImagenFondoPrincipalDos.svg" />
+        <div class="Contenedor_Circulos">
+            <div class="Ellipse-1"></div>
+            <div class="Ellipse-2"></div>
+            <div class="Ellipse-3"></div>
+        </div>
+        <img class="Imagen_INICIO" src="./img/Inicio/ImagenINICIO.svg" />
+        <p class="DEJAR_UNA_HUELLA">
+            <span class="Texto_DejarHuella">DEJAR UNA HUELLA<br/> POSITIVA ESTÁ EN TUS<br/></span>
+            <span class="Texto_Manos">MANOS.</span>
+        </p>
+        <img class="BotonGrupoMensaje" onclick="ScrollToDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+        <div class="Area_Capacitacion">
+            <div class="Grupo_Texto_Area">
+                <div class="Texto_Area">ÁREAS DE CAPACITACIÓN</div>
+                <div class="Text_Conoce">CONOCE NUESTRAS</div>
+            </div>
+            <section class="Area Area_Uno">
+                <img class="Imagen_Tamaño" src="./img/Inicio/AreaUno.svg"/>
+                <span class="Text_Areas">FOMENTO DE ACCIONES PARA MEJORAR LA ECONOMIA POPULAR</span>
+            </section>
+            <section class="Area Area_Dos">
+                <img class="Imagen_Tamaño" src="./img/Inicio/AreaDos.svg"/>
+                <span class="Text_Areas">ALIMENTACIÓN</span>
+            </section>
+            <section class="Area Area_Tres">
+                <img class="Imagen_Tamaño" src="./img/Inicio/AreaTres.svg"/>
+                <span class="Text_Areas">AGRICULTURA</span>
+            </section>
+            <section class="Area Area_Cuatro">
+                <img class="Imagen_Tamaño" src="./img/Inicio/AreaCuatro.svg"/>
+                <span class="Text_Areas">APROVECHAMIENTO RACIONAL DE RECURSOS NATURALES</span>
+            </section>
+            <section class="Area Area_Cinco">
+                <img class="Imagen_Tamaño" src="./img/Inicio/AreaCinco.svg"/>
+                <span class="Text_Areas">EDUCACIÓN AMBIENTAL<br/>Y SALUD</span>
+            </section>
+        </div>
+        <div class="Rectangulo_Uno">
+            <p class="Numero37">37</p>
+            <p class="Texto_Azulado">Computadoras</p>
+            <p class="Texto_Blanco">donadas y entregadas a escuelas vulnerables</p>
+            <p class="Texto_Azulado">en el 2020.</p>
+            <img class="Imagen_PC" src="./img/Inicio/ImagenPC.svg">
+        </div>
+        <div class="Rectangulo_Dos">
+            <p class="Texto_Azulado">Más de</p>
+            <p class="Numero100">100</p>
+            <p class="Texto_Azulado">productos entregados a hospitales en 2020.</p>
+            <img class="Imagen_Hospital" src="./img/Inicio/ImagenHospital.svg">
+        </div>
+        <div class="Rectangulo_Tres">
+            <p class="Texto_Azulado">Más de</p>
+            <p class="Numero100">100</p>
+            <p class="Texto_Azulado">beneficiados con la impartición de cursos y talleres.</p>
+            <img class="Imagen_Curso" src="./img/Inicio/ImagenCurso.svg">
+        </div>
+        <div class="Grupo_AyudaImportante">
+            <p class="Texto_Titulo_Rojo">TU AYUDA ES MUY IMPORTANTE</p>
+            <span class="Text_Normal">Comprometida con la integridad financiera y la responsabilidad social, es por lo que cada peso donado será </span>
+            <span class="Text_Negritas">utilizado de manera
+                <br/>asertiva para el cumplimiento de nuestros objetivos a favor de nuestros beneficiarios. <br/>
+            </span>
+            <span class="Text_Normal">
+                <br/>Si tienes alguna duda acerca de nosotros o deseas conocer más sobre nuestros programas de apoyo y sobre la transparencia de<br />tus donaciones
+            </span>
+            <span class="Text_Contacta">NO DUDES EN CONTACTARNOS.</span>
+            <p class="Texto_Titulo_Rojo">TU DONATIVO ES 100% DEDUCIBLE DE IMPUESTOS</p>
+        </div>
+        <div class="Rectangulo_Donativos" id="SeccionDonativos">
+            <img class="Imagen_Donativo" src="./img/Inicio/ImagenDonativo.svg" alt="Imagen de donativo">
+            <p class="Text_Titulo_Donativo">DONACIONES EN DINERO</p>
+            <p class="Text_Subtitulo_Donativo">Tu donativo contribuirá al conocimiento y capacitación de más de miles de personas vulnerables.</p>
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="nombres"></label>
+                        <input type="text" id="nombres" placeholder="Nombre(s)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad"></label>
+                        <select id="ciudad"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido-paterno"></label>
+                        <input type="text" id="apellido-paterno" placeholder="Apellido Paterno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="monto"></label>
+                        <select id="monto">
+                            <option value="200">$200</option>
+                            <option value="300">$300</option>
+                            <option value="500">$500</option>
+                            <option value="1000">$1,000</option>
+                            <option value="Otro">Otra (min $50)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido-materno"></label>
+                        <input type="text" id="apellido-materno" placeholder="Apellido Materno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tarjeta"></label>
+                        <input type="text" id="tarjeta" placeholder="No. de Tarjeta" pattern="\d{16}" title="Debe contener 16 dígitos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo"></label>
+                        <input type="email" id="correo" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha"></label>
+                        <input type="text" id="fecha" placeholder="MM/AA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv"></label>
+                        <input type="text" id="cvv" placeholder="CVV" pattern="\d{3}" title="Debe contener 3 dígitos" required>
+                    </div>
+                </form>
+                <input type="checkbox" id="terminos">
+                <label for="terminos">He leído y aceptado los <a href="#">Términos y políticas de privacidad</a></label>
+                <img class="Boton_Donacion" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+            </div>
+        </div>
+        <p class="Text_Aliados">NUESTROS ALIADOS</p>
+        <div class="Aliados">
+            <div class="Cuadro_Aliados">
+                <p class="Text_Agradecimiento">AGRADECEMOS EL APOYO DE</p>
+                <p class="Text_Nuestros">NUESTROS ALIADOS</p>
+                <p class="Text_SinEllos">SIN ELLOS NO SERÍA POSIBLE</p> 
+                <div class="Contenedor_Aliados">
+                    <div class="Ellipse_Aliados">
+                        <div class="Circulo-aliados">
+                            <div class="element">
+                                <img id="Imagen_principal" src="./img/Inicio/img_Aliados/AliadoUno.svg" alt="AliadoUno">
+                            </div>
+                            <div class="Boton-Der" onclick="CambiarImagen()">
+                                <img class="Imagen_Boton" src="./img/img_Botones/BotonFlechaDerecha.svg" />
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+            </div>
+            <img class="Imagen_Aliados" src="./img/Inicio/ImagenAliados.svg">
+        </div>
+        <footer class="Pie_pagina">
+            <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+            <div class="Barra_De_Navegacion_Footer">
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('Index')">INICIO</p>
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+                <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+            </div>
+            <div class="Grupo_Redes_Sociales">
+                <div class="Logo_X" onclick="RedirigirPagina('X')">
+                    <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+                    <span class="Nombre_RedSocial">TWITTER</span>
+                </div>
+                <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+                    <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+                    <span class="Nombre_RedSocial">INSTAGRAM</span>
+                </div>
+                <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+                    <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+                    <span class="Nombre_RedSocial">FACEBOOK</span>
+                </div>
+            </div>
+            <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+            <div class="Forma_Contacto">
+                <p class="Titulo_Contacto"><br>Contáctanos</p>
+                <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+                <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+                <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+            </div>
+            <div class="Dirrecion">
+                <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+            </div>
+        </footer>
+        <script src="./script/script_Inicio.js"></script>
+    </body>
+</html>

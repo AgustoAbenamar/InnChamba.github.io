@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_Contacto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+    <title>INN-CHAMBA</title>
+  </head>
+  <body>
+    <header>
+      <div class="Barra_Navegacion">
+        <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Inicio')">INICIO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+        <img class="BotonDonacionEspanol" onclick="RedirigirDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+        <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+          <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+        </div>    
+        <div id="MenuLenguaje" class="Menu_Lenguaje">
+          <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+            <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+            <span>Español</span>
+          </div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+            <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+            <span>Inglés</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="flex-row-aef">
+        <div class="rectangle-body">
+          <div class="flex-row-bf">
+            <div class="rectangle-contactanos">
+              <div class="rectangle-nombre">
+                <input id="nombre" class="input" placeholder="NOMBRE" />
+              </div>
+              <div class="rectangle-apellido">
+                <input id="apellido" class="input-1" placeholder="APELLIDO" />
+              </div>
+              <div class="rectangle-email">
+                <input id="email" class="input-2" placeholder="E-MAIL" />
+              </div>
+              <div class="rectangle-telefono">
+                <input id="telefono" class="input-3" placeholder="TELÉFONO" />
+              </div>
+              <div class="rectangle-asunto">
+                <input id="asunto" class="input-4" placeholder="ASUNTO" />
+              </div>
+              <div class="rectangle-mensaje">
+                <input id="mensaje" class="input-5" placeholder="MENSAJE" />
+              </div>
+              <div class="rectangle-enviar">
+                <button id="enviar" class="enviar">ENVIAR</button>
+              </div>
+            </div>
+            <span class="escribenos">ESCRÍBENOS:</span>
+            <div class="imagen-correo"></div>
+            <span class="contacto-6">contacto@innchamba.org.mx</span
+            ><span class="llamanos">LLÁMANOS:</span>
+            <div class="imagen-telefono"></div>
+            <span class="tel">Tel: 25898695</span
+            ><span class="cel">Cel: 5548600861</span
+            ><span class="visitanos">VISÍTANOS:</span>
+            <div class="imagen-mapa"></div>
+            <span class="direccion"
+              >Bahía de Todos los Santos 143<br />Col. Verónica Anzures,<br />Alcaldía
+              Miguel Hidalgo, C.P. 11300</span
+            >
+          </div>
+          <span class="siguenos">SÍGUENOS:</span>
+          <div class="flex-row-fd">
+            <div class="logo-facebook" onclick="RedirigirPagina('Facebook')"></div>
+            <div class="logo-insta" onclick="RedirigirPagina('Instagram')"></div>
+            <div class="logo-twitter" onclick="RedirigirPagina('X')"></div>
+          </div>
+          <iframe class="mapa-ejemplo" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15049.943235909655!2d-99.1737818!3d19.4346104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8b3839bffff%3A0x97d9d96d5dd9a1b7!2sInn-Chamba!5e0!3m2!1ses-419!2smx!4v1727362414344!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="contactanos">CONTÁCTANOS</span>
+        </div>
+        <div class="imagen-cortada"></div>
+        <div class="imagen-cortada-dos"></div>
+      </div>
+    </div>
+    <footer class="Pie_pagina">
+      <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+      <div class="Barra_De_Navegacion_Footer">
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Inicio')">INICIO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+      </div>
+      <div class="Grupo_Redes_Sociales">
+        <div class="Logo_X" onclick="RedirigirPagina('X')">
+          <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+          <span class="Nombre_RedSocial">TWITTER</span>
+        </div>
+        <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+          <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+          <span class="Nombre_RedSocial">INSTAGRAM</span>
+        </div>
+        <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+          <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+          <span class="Nombre_RedSocial">FACEBOOK</span>
+        </div>
+      </div>
+      <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+      <div class="Forma_Contacto">
+        <p class="Titulo_Contacto"><br>Contáctanos</p>
+        <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+        <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+        <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+      </div>
+      <div class="Dirrecion">
+        <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+      </div>
+    </footer>
+    <script src="./script/script_Contacto.js"></script>
+  </body>
+</html>

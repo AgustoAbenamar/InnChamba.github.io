@@ -1,0 +1,793 @@
+.Barra_Navegacion {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #151241;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 3100;
+}
+
+.Boton_Idioma, .BotonDonacionEspanol {
+  position: relative;
+  top: -6vh;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 2200;
+}
+
+.LogoINNCHAMBA {
+  position: relative;
+  top: -1vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.Text_BarraNavegacion {
+  position: relative;
+  top: -6vh;
+  margin: 0 15px;
+  cursor: pointer;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  z-index: 3100;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Menu_Lenguaje {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #eaeaea 100%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.Cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  z-index: 1100;
+}
+
+.Lenguaje_Opcion {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5.5px;
+}
+
+.Lenguaje_Opcion img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Lenguaje_Opcion:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.ImagenEspanol {
+  height: 45px;
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+  animation: parpadeo 1s infinite;
+}
+
+@media (max-width: 768px) {
+  .Barra_Navegacion {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .Text_BarraNavegacion {
+      margin: 10px 0;
+  }
+}
+
+.NUESTRA-HISTORIA {
+  background-color: #f4f7fe;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.NUESTRA-HISTORIA .div {
+  background-color: #f4f7fe;
+  overflow: hidden;
+  width: 1920px;
+  height: 6998px;
+  position: relative;
+}
+
+.NUESTRA-HISTORIA .text-servicio {
+  position: absolute;
+  width: 1942px;
+  height: 856px;
+  top: 5680px;
+  left: -12px;
+}
+
+.NUESTRA-HISTORIA .overlap-group {
+  position: relative;
+  width: 1940px;
+  height: 856px;
+}
+
+.NUESTRA-HISTORIA .rectangle-servicios {
+  position: absolute;
+  width: 1940px;
+  height: 585px;
+  top: 271px;
+  left: 0;
+  background-color: #3b7018;
+  border: 0px none;
+}
+
+.NUESTRA-HISTORIA .NUESTROS-SERVICIOS {
+  position: absolute;
+  width: 1031px;
+  top: 361px;
+  left: 865px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 64px;
+  letter-spacing: -0.96px;
+  line-height: 64px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper {
+  font-weight: 800;
+  color: #a8c966;
+  letter-spacing: -0.61px;
+  line-height: 68px;
+}
+
+.NUESTRA-HISTORIA .span {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -0.04px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-2 {
+  font-weight: 600;
+  color: #151241;
+  font-size: 36px;
+  letter-spacing: -0.19px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .imagen-corazon {
+  width: 713px;
+  height: 705px;
+  top: 0;
+  left: 117px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .text-apoyo {
+  position: absolute;
+  width: 1427px;
+  height: 825px;
+  top: 4760px;
+  left: 245px;
+}
+
+.NUESTRA-HISTORIA .overlap {
+  position: relative;
+  width: 1425px;
+  height: 825px;
+}
+
+.NUESTRA-HISTORIA .rectangle-apoyo {
+  position: absolute;
+  width: 971px;
+  height: 333px;
+  top: 492px;
+  left: 454px;
+  background-color: #64497e;
+  z-index: 1;
+}
+
+.NUESTRA-HISTORIA .INN-CHAMBA-i-a-p-se {
+  width: 877px;
+  top: 553px;
+  left: 511px;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -0.24px;
+  line-height: 34.5px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-3 {
+  letter-spacing: -0.04px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-4 {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.09px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-5 {
+  font-size: 24px;
+  letter-spacing: -0.09px;
+}
+
+.NUESTRA-HISTORIA .imagen-apoyo {
+  width: 971px;
+  height: 553px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .collage-valores {
+  position: absolute;
+  width: 1481px;
+  height: 1521px;
+  top: 3121px;
+  left: 237px;
+}
+
+.NUESTRA-HISTORIA .overlap-2 {
+  position: absolute;
+  width: 1423px;
+  height: 1375px;
+  top: 154px;
+  left: 60px;
+}
+
+.NUESTRA-HISTORIA .ellipse-principal {
+  position: absolute;
+  width: 1146px;
+  height: 1146px;
+  top: 166px;
+  left: 138px;
+  background-color: #3b7018;
+  border-radius: 573px;
+  border: 26px solid;
+  border-color: #a8c966;
+}
+
+.NUESTRA-HISTORIA .grupo-nueve {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 1011px;
+  left: 709px;
+}
+
+.NUESTRA-HISTORIA .grupo-ocho {
+  position: absolute;
+  width: 366px;
+  height: 366px;
+  top: 1009px;
+  left: 332px;
+}
+
+.NUESTRA-HISTORIA .grupo-siete {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 781px;
+  left: 1006px;
+}
+
+.NUESTRA-HISTORIA .grupo-seis {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 781px;
+  left: 36px;
+}
+
+.NUESTRA-HISTORIA .grupo-cinco {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 414px;
+  left: 1059px;
+}
+
+.NUESTRA-HISTORIA .grupo-centro {
+  position: absolute;
+  width: 470px;
+  height: 463px;
+  top: 442px;
+  left: 476px;
+}
+
+.NUESTRA-HISTORIA .grupo-cuatro {
+  position: absolute;
+  width: 363px;
+  height: 363px;
+  top: 414px;
+  left: 0;
+}
+
+.NUESTRA-HISTORIA .grupo-tres {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 76px;
+  left: 895px;
+}
+
+.NUESTRA-HISTORIA .grupo-dos {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 0;
+  left: 520px;
+}
+
+.NUESTRA-HISTORIA .grupo-uno {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  top: 76px;
+  left: 152px;
+}
+
+.NUESTRA-HISTORIA .VALORES-DEL-TRABAJO {
+  position: absolute;
+  width: 838px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 800;
+  color: #3b7018;
+  font-size: 64px;
+  letter-spacing: -0.96px;
+  line-height: 69.5px;
+}
+
+.NUESTRA-HISTORIA .text-justificacion {
+  position: absolute;
+  width: 1435px;
+  height: 2125px;
+  top: 852px;
+  left: 237px;
+}
+
+.NUESTRA-HISTORIA .reconocemos-que-las {
+  position: absolute;
+  width: 699px;
+  top: 1837px;
+  left: 0;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.48px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-6 {
+  font-weight: 800;
+  letter-spacing: -0.15px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-7 {
+  font-size: 15px;
+  letter-spacing: -0.03px;
+}
+
+.NUESTRA-HISTORIA .imagen-jus-cuatro {
+  width: 701px;
+  height: 770px;
+  top: 1355px;
+  left: 724px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .imagen-jus-tres {
+  width: 724px;
+  height: 770px;
+  top: 1045px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .p {
+  top: 1069px;
+  color: #000000;
+  position: absolute;
+  width: 685px;
+  left: 740px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: -0.48px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .overlap-3 {
+  position: absolute;
+  width: 1425px;
+  height: 968px;
+  top: 0;
+  left: 0;
+}
+
+.NUESTRA-HISTORIA .imagen-jus-dos {
+  width: 713px;
+  height: 838px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .imagen-jus-uno {
+  width: 725px;
+  height: 538px;
+  top: 430px;
+  left: 577px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .reconocemos-que-las-2 {
+  top: 257px;
+  color: #000000;
+  position: absolute;
+  width: 685px;
+  left: 740px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: -0.48px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .reconocemos-que-las-3 {
+  top: 108px;
+  color: transparent;
+  position: absolute;
+  width: 685px;
+  left: 740px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: -0.48px;
+  line-height: 34.5px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-8 {
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.15px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-9 {
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: -0.03px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-10 {
+  font-weight: 800;
+  color: #151241;
+  font-size: 20px;
+  letter-spacing: -0.06px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-11 {
+  position: absolute;
+  width: 665px;
+  top: 10px;
+  left: 740px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 800;
+  color: #3b7018;
+  font-size: 64px;
+  letter-spacing: -0.96px;
+  line-height: 58.5px;
+  white-space: nowrap;
+}
+
+.NUESTRA-HISTORIA .overlap-4 {
+  position: absolute;
+  width: 1924px;
+  height: 777px;
+  top: -2px;
+  left: 0;
+}
+
+.NUESTRA-HISTORIA .text-historia {
+  position: absolute;
+  width: 1924px;
+  height: 777px;
+  top: 0;
+  left: 0;
+}
+
+.NUESTRA-HISTORIA .overlap-5 {
+  position: relative;
+  width: 1920px;
+  height: 775px;
+  top: 2px;
+  background-color: #a8c966;
+  background-image: url(./img/collagefotos.png);
+  background-size: 100% 100%;
+}
+
+.NUESTRA-HISTORIA .imagen-unidos {
+  width: 925px;
+  height: 567px;
+  top: 104px;
+  left: 995px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.NUESTRA-HISTORIA .overlap-group-2 {
+  position: absolute;
+  width: 640px;
+  height: 425px;
+  top: 142px;
+  left: 256px;
+}
+
+.NUESTRA-HISTORIA .vector-historia {
+  position: absolute;
+  width: 612px;
+  height: 166px;
+  top: 18px;
+  left: 0;
+}
+
+.NUESTRA-HISTORIA .INN-CHAMBA-i-a-p {
+  width: 628px;
+  top: 215px;
+  left: 12px;
+  color: transparent;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  line-height: 31px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-12 {
+  color: #000000;
+  letter-spacing: -0.06px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-13 {
+  font-weight: 800;
+  color: #3b7018;
+  font-size: 24px;
+  letter-spacing: -0.09px;
+}
+
+.NUESTRA-HISTORIA .div-2 {
+  width: 628px;
+  top: 0;
+  left: 12px;
+  font-weight: 800;
+  font-size: 64px;
+  letter-spacing: -0.96px;
+  line-height: 94px;
+  position: absolute;
+  font-family: "Montserrat", Helvetica;
+  color: #151241;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-14 {
+  letter-spacing: -0.61px;
+}
+
+.NUESTRA-HISTORIA .text-wrapper-15 {
+  font-size: 96px;
+  letter-spacing: -1.38px;
+}
+
+.Pie_pagina {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  background-color: #3A358F;
+  top: 718vh;
+  left: 0;
+}
+
+.Imagen_GrupoReunion {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Barra_De_Navegacion_Footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 15%;
+  z-index: 3;
+}
+
+.Text_Botones_Navegacion {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #E3ECEC;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Text_Botones_Navegacion:hover {
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.Text_Botones_Navegacion:hover {
+  color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.Grupo_Redes_Sociales {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 35%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.Nombre_RedSocial {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
+  color: #E3ECEC;
+  text-align: center;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Logo {
+  width: 40px;
+  height: 40px;
+}
+
+.Logo_X {
+  position: absolute;
+  TOP: 2vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo_Instagram {
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo_Facebook {
+  position: absolute;
+  top: 18vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Forma_Contacto {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 52.5%;
+  z-index: 4;
+}
+
+.Titulo_Contacto {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 22px;
+  font-weight: bold;
+  color: #E3ECEC;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Text_Contacto {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E3ECEC;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Logo_INNCHAMBA {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 15%;
+  left: 77%;
+  z-index: 4;
+}
+
+.Dirrecion {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 52%;
+  left: 72.5%;
+  z-index: 4;
+}
+
+.Dirrecion_INNCHAMBA {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E3ECEC;
+  text-align: center;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}

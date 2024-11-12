@@ -1,0 +1,1402 @@
+.Barra_Navegacion {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #151241;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 3100;
+}
+
+.Boton_Idioma, .BotonDonacionEspanol {
+  position: relative;
+  top: -6vh;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 2200;
+}
+
+.LogoINNCHAMBA {
+  position: relative;
+  top: -1vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.Text_BarraNavegacion {
+  position: relative;
+  top: -6vh;
+  margin: 0 15px;
+  cursor: pointer;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  z-index: 3100;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Menu_Lenguaje {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: linear-gradient(135deg, #f9f9f9 0%, #eaeaea 100%);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.Cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  z-index: 1100;
+}
+
+.Lenguaje_Opcion {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5.5px;
+}
+
+.Lenguaje_Opcion img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Lenguaje_Opcion:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.ImagenEspanol {
+  height: 45px;
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+.Text_BarraNavegacion:hover,
+.BotonDonacionEspanol:hover,
+.Boton_Idioma:hover,
+.BotonGrupoMensaje:hover {
+  animation: parpadeo 1s infinite;
+}
+
+@media (max-width: 768px) {
+  .Barra_Navegacion {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .Text_BarraNavegacion {
+      margin: 10px 0;
+  }
+}
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1920px;
+  height: 7150px;
+  margin: 0 auto;
+  background: #f4f7fe;
+  overflow: hidden;
+}
+
+.flex-row {
+  position: relative;
+  width: 1923px;
+  height: 726px;
+  margin: 0 0 0 0;
+  z-index: 89;
+}
+
+.rectangle-inicio {
+  position: absolute;
+  width: 1920px;
+  height: 726px;
+  top: 0;
+  left: 0;
+  background: #a8c966;
+  z-index: 88;
+}
+
+.flex-row-ec {
+  position: absolute;
+  width: 44.17%;
+  height: 87.97%;
+  top: 0;
+  left: 0.31%;
+  z-index: 116;
+}
+
+.imagen-mano {
+  position: absolute;
+  width: 819.588px;
+  height: 562.685px;
+  top: 76px;
+  left: 21px;
+  background: url(./Img_Style/NuestroTrabajo/e7e8ba57-29cd-4f6b-8259-6b58e2bf7705.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 90;
+}
+
+.nuestro-trabajo-4 {
+  position: absolute;
+  width: 74.06%;
+  height: 37.26%;
+  top: 45.72%;
+  left: 25.94%;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 94px;
+  text-align: left;
+  letter-spacing: -0.96px;
+  z-index: 91;
+}
+.nuestro-trabajo-5 {
+  position: relative;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 94px;
+  text-align: left;
+  letter-spacing: -0.96px;
+}
+.trabajo {
+  position: relative;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 94px;
+  text-align: left;
+  letter-spacing: -0.96px;
+}
+.imagen-inicio {
+  position: absolute;
+  width: 1198.356px;
+  height: 635px;
+  top: 98px;
+  left: 721.644px;
+  background: url(./Img_Style/NuestroTrabajo/b7996c43-6e80-4468-9804-3b57d374834d.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 89;
+}
+.flex-row-f {
+  position: relative;
+  width: 1995.519px;
+  height: 573px;
+  margin: 77px 0 0 0;
+  z-index: 86;
+}
+.imagen-actividades {
+  position: absolute;
+  width: 950px;
+  height: 573px;
+  top: 0;
+  left: 0;
+  background: url(./Img_Style/NuestroTrabajo/4feb7656fdcb664eda13dccea334869fa161ad14.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 86;
+}
+.busca-cumplimiento-actividades {
+  position: absolute;
+  width: 835px;
+  height: 103px;
+  top: 55px;
+  left: 971px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 85;
+}
+.busca-cumplimiento-objetivo {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.actividades-asistenciales {
+  position: relative;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.como-son {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.imagen-mano-actividades {
+  position: absolute;
+  width: 698.519px;
+  height: 479.565px;
+  top: 76px;
+  left: 1297.001px;
+  background: url(./Img_Style/NuestroTrabajo/11200393-c126-4538-ab30-241c94057f68.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 78;
+}
+.orientacion-social-educacion-capacitacion {
+  position: absolute;
+  width: 682px;
+  height: 70px;
+  top: 151px;
+  left: 1131px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+  z-index: 84;
+}
+.orientacion-social-educacion-capacitacion-6 {
+  position: relative;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.en-materia {
+  position: relative;
+  color: #0f1010;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.numero-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 260px;
+  height: 19.2%;
+  top: 30.89%;
+  left: 49.46%;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 220px;
+  font-weight: 800;
+  line-height: 58.5px;
+  text-align: left;
+  letter-spacing: -3.3px;
+  z-index: 80;
+}
+.alimentacion-agricultura-recursos-ambientales {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 682px;
+  height: 70px;
+  top: 221px;
+  left: 1131px;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 83;
+}
+.fomento-acciones-economia-popular {
+  position: absolute;
+  width: 682px;
+  height: 70px;
+  top: 366px;
+  left: 1131px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+  z-index: 82;
+}
+.fomento-acciones-economia-popular-7 {
+  position: relative;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.actos-asistenciales {
+  position: relative;
+  color: #0f1010;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+.numero-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 260px;
+  height: 19.2%;
+  top: 72.08%;
+  left: 49.06%;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 220px;
+  font-weight: 800;
+  line-height: 58.5px;
+  text-align: left;
+  letter-spacing: -3.3px;
+  z-index: 79;
+}
+.organizacion-talleres-proyectos-economia-popular {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 634px;
+  height: 70px;
+  top: 436px;
+  left: 1131px;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  text-overflow: initial;
+  letter-spacing: -0.24px;
+  z-index: 81;
+  overflow: hidden;
+}
+.flex-row-bdc {
+  position: relative;
+  width: 260px;
+  height: 83px;
+  margin: 105px 0 0 830px;
+  z-index: 76;
+}
+.nuestros {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 66.27%;
+  top: 0;
+  left: 0;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.3px;
+  z-index: 76;
+}
+.programas {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 66.27%;
+  top: 33.73%;
+  left: 0;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.36px;
+  z-index: 75;
+}
+.flex-row-dad {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 996px;
+  height: 244px;
+  margin: 17px 0 0 467px;
+  z-index: 74;
+}
+.imagen-sem {
+  flex-shrink: 0;
+  position: relative;
+  width: 244px;
+  height: 244px;
+  background: url(./Img_Style/NuestroTrabajo/506fd720-b9bf-495c-96bd-990972e44394.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 74;
+  border-radius: 50%;
+}
+.imagen-pit {
+  flex-shrink: 0;
+  position: relative;
+  width: 244px;
+  height: 244px;
+  background: url(./Img_Style/NuestroTrabajo/8d0b1a20-4de0-4b4c-886f-4a5311bb60a4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 72;
+  border-radius: 50%;
+}
+.imagen-esc {
+  flex-shrink: 0;
+  position: relative;
+  width: 244px;
+  height: 244px;
+  background: url(./Img_Style/NuestroTrabajo/c2e48ef6-1cfe-47bc-b23a-04e2fe947da6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 70;
+  border-radius: 50%;
+}
+.flex-row-cec {
+  position: relative;
+  width: 1130px;
+  height: 54px;
+  margin: 23px 0 0 370px;
+  z-index: 73;
+}
+.sembrando-conocimiento {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 438px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  z-index: 73;
+}
+.color-al-conocimiento {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 438px;
+  height: 100%;
+  top: 0;
+  left: 33.27%;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  z-index: 71;
+}
+.orientacion-social-aprovechamiento {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 311px;
+  height: 100%;
+  top: 0;
+  left: 72.48%;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.22px;
+  z-index: 69;
+}
+.rectangle-cultivo {
+  position: relative;
+  width: 1920px;
+  height: 680px;
+  margin: 96px 0 0 0;
+  background: url(./Img_Style/NuestroTrabajo/64a9d742-ae9e-416b-a8ef-b26fcb104a92.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 61;
+}
+.imagen-cultivo {
+  position: absolute;
+  width: 831px;
+  height: 625px;
+  top: 55px;
+  left: 1026px;
+  background: url(./Img_Style/NuestroTrabajo/b10f9676c62a87a84279bc2fc7b29f8996e76ac0.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 62;
+}
+.flex-column-a {
+  position: absolute;
+  width: 37.08%;
+  height: 68.68%;
+  top: 15.15%;
+  left: 11.61%;
+  font-size: 0px;
+  z-index: 67;
+}
+.sembrando-conocimiento-8 {
+  display: block;
+  position: relative;
+  height: 61px;
+  margin: 0 0 0 0;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.48px;
+  z-index: 67;
+}
+.objetivo-general {
+  position: relative;
+  width: 712px;
+  height: 126px;
+  margin: 67px 0 0 0;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 65;
+}
+.objetivo-general-9 {
+  position: relative;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.objetivo-general-a {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.objetivos-especificos {
+  position: relative;
+  width: 712px;
+  height: 190px;
+  margin: 23px 0 0 0;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 63;
+}
+.objetivos-especificos-b {
+  position: relative;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.objetivos-especificos-c {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.flex-column-bbf {
+  position: absolute;
+  width: 9px;
+  height: 160px;
+  top: 243px;
+  left: 200px;
+  z-index: 66;
+}
+.punto-general {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  margin: 0 0 0 0;
+  background: url(./Img_Style/NuestroTrabajo/856de510-89cf-479f-86de-a9b3e2efd4e4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 66;
+  border-radius: 50%;
+}
+.punto-especificos {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  margin: 142px 0 0 0;
+  background: url(./Img_Style/NuestroTrabajo/6ed4b002-4821-4291-b471-f6ac7f6ea077.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 64;
+  border-radius: 50%;
+}
+.rectangle-pintura {
+  position: relative;
+  width: 1920px;
+  height: 680px;
+  margin: 0 0 0 0;
+  background: #113d3c;
+  z-index: 55;
+}
+.imagen-pintura {
+  position: absolute;
+  width: 831px;
+  height: 625px;
+  top: 55px;
+  left: 63px;
+  background: url(./Img_Style/NuestroTrabajo/8d17cfbc763d445cee5217c2bbabd5e13ad9b4c4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 59;
+}
+.flex-column-b {
+  position: absolute;
+  width: 37.08%;
+  height: 37.35%;
+  top: 15.15%;
+  left: 51.3%;
+  font-size: 0px;
+  z-index: 58;
+}
+.color-al-conocimiento-d {
+  display: block;
+  position: relative;
+  height: 61px;
+  margin: 0 0 0 0;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.48px;
+  z-index: 58;
+}
+.objetivo-general-e {
+  position: relative;
+  width: 712px;
+  height: 126px;
+  margin: 67px 0 0 0;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 56;
+}
+.objetivo-general-f {
+  position: relative;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.objetivo-general-10 {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.punto-general-11 {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 242px;
+  left: 971px;
+  background: url(./Img_Style/NuestroTrabajo/73a90584-f1bc-45de-a79b-7be46b985e1b.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 57;
+  border-radius: 50%;
+}
+.rectangle-escritura {
+  position: relative;
+  width: 1920px;
+  height: 680px;
+  margin: 0 0 0 0;
+  background: url(./Img_Style/NuestroTrabajo/a3ddf52d-6657-4867-b063-cf3e9328d37d.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 49;
+}
+.imagen-escritura {
+  position: absolute;
+  width: 831px;
+  height: 625px;
+  top: 55px;
+  left: 1026px;
+  background: url(./Img_Style/NuestroTrabajo/c64b7e072590a7caba1d273c6b502e6ed343a4d6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 50;
+}
+.flex-column-f {
+  position: absolute;
+  width: 37.08%;
+  height: 50%;
+  top: 15.15%;
+  left: 11.61%;
+  font-size: 0px;
+  z-index: 53;
+}
+.orientacion-social-aprovechamiento-12 {
+  display: block;
+  position: relative;
+  height: 61px;
+  margin: 0 0 0 0;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.48px;
+  z-index: 53;
+}
+.objetivo-general-13 {
+  position: relative;
+  width: 712px;
+  height: 126px;
+  margin: 153px 0 0 0;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 52;
+}
+.text-26 {
+  position: relative;
+  color: #a8c966;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.programa-capacitando-mexico {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: left;
+  letter-spacing: -0.24px;
+}
+.punto-general-14 {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 329px;
+  left: 200px;
+  background: url(./Img_Style/NuestroTrabajo/5f2e0734-7aed-45f0-bf23-5eff567098b9.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 51;
+  border-radius: 50%;
+}
+.flex-row-ffc {
+  position: relative;
+  width: 2148.62px;
+  height: 1037px;
+  margin: 25px 0 0 -119px;
+  z-index: 46;
+}
+.imagen-mano-iz {
+  position: absolute;
+  width: 734.619px;
+  height: 504.35px;
+  top: 0;
+  left: 0;
+  background: url(./Img_Style/NuestroTrabajo/e512fb7f-7328-4de1-ab8a-056b7e43a6e5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 46;
+}
+.imagen-mano-de {
+  position: absolute;
+  width: 734.619px;
+  height: 504.35px;
+  top: 0;
+  left: 1414px;
+  background: url(./Img_Style/NuestroTrabajo/48c7a585-5b64-4e44-9b63-f0244772b58d.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+}
+.lado-de {
+  position: absolute;
+  width: 532.5px;
+  height: 206.5px;
+  top: 60.5px;
+  left: 1079px;
+  background: url(./Img_Style/NuestroTrabajo/219cf0fe-8eee-4d95-8ac5-d120c183e392.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 43;
+}
+.objetivos-sociales {
+  position: absolute;
+  width: 930px;
+  height: 181px;
+  top: 143px;
+  left: 614px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  z-index: 42;
+}
+.objetivos-sociales-15 {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: center;
+  letter-spacing: -0.24px;
+}
+.inn-chamba-iap {
+  position: relative;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.5px;
+  text-align: center;
+  letter-spacing: -0.24px;
+}
+.orientacion-social {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: center;
+  letter-spacing: -0.24px;
+}
+.lado-iz {
+  position: absolute;
+  width: 532.5px;
+  height: 206.5px;
+  top: 200px;
+  left: 536.5px;
+  background: url(./Img_Style/NuestroTrabajo/b8de15f1-bf1f-47f2-835c-84759a838fa9.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 45;
+}
+.rectangle-cliente {
+  position: absolute;
+  width: 1920px;
+  height: 545px;
+  top: 492px;
+  left: 119px;
+  background: #64497e;
+  z-index: 38;
+}
+.imagen-cliente {
+  position: absolute;
+  width: 615px;
+  height: 497px;
+  top: 37px;
+  left: 62px;
+  background: url(./Img_Style/NuestroTrabajo/39feea3179eed3858305ebc82001a7cf123eb095.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 40;
+}
+.cursos-contacto {
+  position: absolute;
+  width: 929px;
+  height: 269px;
+  top: 180px;
+  left: 733px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: -0.48px;
+  z-index: 39;
+}
+.cursos-contacto-16 {
+  position: relative;
+  color: #170627;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: -0.48px;
+}
+.cursos-contacto-17 {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: -0.48px;
+}
+.rectangle-implementar {
+  position: relative;
+  width: 1920px;
+  height: 1588px;
+  margin: 0 0 0 0;
+  background: #e4e4e4;
+  z-index: 24;
+}
+.flex-column-c {
+  position: absolute;
+  width: 100%;
+  height: 67.51%;
+  top: 2.33%;
+  left: 0;
+  font-size: 0px;
+  z-index: 36;
+}
+.proyectos-buscamos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 476px;
+  height: 55px;
+  margin: 0 0 0 722px;
+  color: #151241;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.3px;
+  z-index: 36;
+}
+.implementar-2024 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 574px;
+  height: 55px;
+  margin: -6px 0 0 673px;
+  color: #3b7018;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.54px;
+  z-index: 35;
+}
+.rectangle-incubadora {
+  position: relative;
+  width: 970px;
+  height: 110px;
+  margin: 86px 0 0 950px;
+  background: #4cd4c9;
+  z-index: 32;
+}
+.incubadoras-emprendimiento {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50%;
+  top: 24.55%;
+  left: 2.16%;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.54px;
+  z-index: 33;
+}
+.impulsaremos-economia-popular {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 930px;
+  height: 244px;
+  margin: 37px 0 0 950px;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 30;
+}
+.imagen-educar {
+  position: absolute;
+  width: 611px;
+  height: 610px;
+  top: 839px;
+  left: 1139px;
+  background: url(./Img_Style/NuestroTrabajo/02d9ab79-b401-4c5c-ae78-a8adf4670233.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 25;
+}
+.rectangle-educar {
+  position: absolute;
+  width: 970px;
+  height: 110px;
+  top: 962px;
+  left: 0;
+  background: url(./Img_Style/NuestroTrabajo/6aa2a4a4-4f96-4767-bcfa-0591afbbf54d.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 28;
+}
+.educar-proteger-ambiente {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50%;
+  top: 24.55%;
+  left: 6.29%;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.54px;
+  z-index: 29;
+}
+.flex-column-bdf {
+  position: absolute;
+  width: 930px;
+  height: 1201px;
+  top: 189px;
+  left: 40px;
+  z-index: 34;
+}
+.imagen-implementar {
+  position: relative;
+  width: 610px;
+  height: 610px;
+  margin: 0 0 0 108px;
+  background: url(./Img_Style/NuestroTrabajo/d3fa3599-23dc-489f-ad69-98136fbb5546.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 34;
+  border-radius: 50%;
+}
+.cuidado-medio-ambiente {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 930px;
+  height: 244px;
+  margin: 347px 0 0 0;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: left;
+  letter-spacing: -0.24px;
+  z-index: 26;
+}
+
+.Pie_pagina {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  background-color: #3A358F;
+  top: 735vh;
+  left: 0;
+}
+
+.Imagen_GrupoReunion {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Barra_De_Navegacion_Footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 15%;
+  z-index: 3;
+}
+
+.Text_Botones_Navegacion {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  color: #E3ECEC;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.Text_Botones_Navegacion:hover {
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.Text_Botones_Navegacion:hover {
+  color: #3498db;
+  transition: background-color 0.3s ease;
+}
+
+.Grupo_Redes_Sociales {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 35%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.Nombre_RedSocial {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
+  color: #E3ECEC;
+  text-align: center;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Logo {
+  width: 40px;
+  height: 40px;
+}
+
+.Logo_X {
+  position: absolute;
+  TOP: 2vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo_Instagram {
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Logo_Facebook {
+  position: absolute;
+  top: 18vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Forma_Contacto {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 20%;
+  left: 52.5%;
+  z-index: 4;
+}
+
+.Titulo_Contacto {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 22px;
+  font-weight: bold;
+  color: #E3ECEC;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Text_Contacto {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E3ECEC;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.Logo_INNCHAMBA {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 15%;
+  left: 77%;
+  z-index: 4;
+}
+
+.Dirrecion {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  top: 52%;
+  left: 72.5%;
+  z-index: 4;
+}
+
+.Dirrecion_INNCHAMBA {
+  font-family: "Montserrat", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  color: #E3ECEC;
+  text-align: center;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  white-space: nowrap;
+}

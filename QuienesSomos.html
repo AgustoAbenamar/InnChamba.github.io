@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_QuienesSomos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+  </head>
+  <body>
+    <header>
+      <div class="Barra_Navegacion">
+        <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Index')">INICIO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+        <img class="BotonDonacionEspanol" onclick="RedirigirDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+        <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+          <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+        </div>
+        <div id="MenuLenguaje" class="Menu_Lenguaje">
+          <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+            <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+            <span>Español</span>
+          </div>
+          <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+            <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+            <span>Inglés</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="Container_Quienes_Somos">
+      <div class="Fondo_Container">
+        <div class="Grupo_Texto_Objetivos">
+          <div class="Grupo_ImagenDibujando_Rectangulo">
+            <div class="Rectangulo_Objetivos"></div>
+            <img class="Imagen_Dibujando" src="./img/QuienesSomos/imagenper.png" />
+          </div>
+          <p class="Texto_Objetivos">
+            INN CHAMBA I.A.P. es una organización sin fines de lucro que desde sus inicios fue constituida para lograr
+            un cambio positivo mediante actividades asistenciales como capacitaciones, cursos, seminarios y talleres en
+            temas de salud, medio ambiente, capacitación para el trabajo y fomento de la economía popular, mismas que
+            servirán como herramientas de trabajo para un futuro y de esta manera hacer sectores más autosensibles en
+            cuanto a su economía teniendo como beneficiarios principales a personas, sectores y regiones de escasos
+            recursos; a personas del sector vulnerable ya sea por su edad, sexo, por contar con alguna capacidad
+            especial física, por pertenecer al sector rural; entre otros.
+          </p>
+          <div class="Texto_Objetivos_Titulo">OBJETIVOS<br/>CONSTITUCIONALES</div>
+        </div>
+        <div class="Grupo_Mision_Vision">
+          <div class="Grupo_ImagenEquipo_Rectangulo">
+            <div class="Rectangulo_Mision_Vision"></div>
+            <img class="Image_Equipo" src="./img/QuienesSomos/imagenequipo.png" />
+          </div>
+          <p class="Titulo_Vision">VISIÓN</p>
+          <p class="Grupo_Texto_Vision">
+            <span class="Texto_Normal">Ser una </span>
+            <span class="Texto_Vision_Verde">Fundación reconocida nacional e internacionalmente</span>
+            <span class="Texto_Normal"> por sus </span>
+            <span class="Texto_Vision_Verde">servicios educativos </span>
+            <span class="Texto_Normal">y </span>
+            <span class="Texto_Vision_Verde">su gestión de proyectos sociales innovadores</span>
+            <span class="Texto_Normal">,</span>
+            <span class="Texto_Vision_Verde">solucionando problemáticas actuales. </span>
+          </p> 
+          <p class="Grupo_Texto_Mision">
+            <span class="Texto_Mision_Verde">Restaurar</span>
+            <span class="Texto_Mision_Normal">
+              el tejido social que ha sido dañado a lo largo del tiempo por cuestiones de género, edad y
+              nivel socioeconómico, una
+            </span>
+            <span class="Texto_Mision_Verde">comunidad activa y participativa</span>
+            <span class="Texto_Mision_Normal"> en aplicar las estrategias básicas de INN CHAMBA I.A.P. </span>
+            <span class="Texto_Mision_Verde">Desarrollar un centro de innovación e inteligencia</span>
+            <span class="Texto_Mision_Normal">
+              que promuevan igualdad de oportunidades, gestionar 50 proyectos de desarrollo a grupos de trabajo y
+              dialogar y motivar a 70 grupos de trabajo para iniciar procesos de activación colectiva, innovación y
+              emprendimientos sociales.
+            </span>
+          </p>
+          <div class="Titulo_Mision">MISIÓN</div>
+        </div>
+        <div class="Container_Principal">
+          <div class="text-proyecto">
+            <div class="overlap-3">
+              <img class="imagen-back" src="./img/QuienesSomos/imagenback.png" />
+              <div class="listado-p-tres">
+                <div class="overlap-group-2">
+                  <div class="rectangle-p-tres"></div>
+                  <p class="va-encaminado-en-dar">
+                    <span class="text-wrapper-9">
+                      Va encaminado en dar una solución al problema económico que acecha a nuestro país desde hace años
+                      y se ha potenciado aún más en tiempos de pandemia.<br/><br/>
+                    </span>
+                  </p>
+                  <p class="en-tus-manos">
+                    ORIENTACIÓN SOCIAL SOBRE EL APROVECHAMIENTO DE FINANZAS BÁSICAS POST PANDEMIA 2022 Y 20223
+                  </p>
+                </div>
+              </div>
+              <div class="listado-p-dos">
+                <div class="overlap-4">
+                  <p class="proporcionar-a-los">
+                    <span class="text-wrapper-9">
+                      Proporcionar a los alumnos un regreso a clases en aulas mas armónicas usando la técnica de la
+                      colorimetría para atender problemáticas como el autismo, TDH, etc.<br/><br/>
+                    </span>
+                  </p>
+                  <div class="COLOR-AL">COLOR AL <br />CONOCIMIENTO 2020</div>
+                </div>
+              </div>
+              <div class="listado-p-uno">
+                <div class="overlap-4">
+                  <p class="p">
+                    Proporcionar una herramienta técnico metodológica para el desarrollo de talleres de capacitación
+                    para personas interesadas en temas agrícolas.
+                  </p>
+                  <p class="text-wrapper-10">SEMBRANDO CONOCIMIENTO 2020, 2021, Y 2022</p>
+                </div>
+              </div>
+              <img class="imagen-esc" src="./img/QuienesSomos/imagenesc.png" />
+              <img class="imagen-pit" src="./img/QuienesSomos/imagenpit.png" />
+              <img class="imagen-cult" src="./img/QuienesSomos/imagencult.png" />
+              <p class="buscando-el">
+                <span class="Texto_Normal">Buscando el mejoramiento de la sociedad INN CHAMBA I.A.P. ha creado </span>
+                <span class="text-wrapper-11">4 proyectos anuales</span>
+                <span class="Texto_Normal"> cuyo objetivo es alcanzar a llegar a </span>
+                <span class="text-wrapper-11">más de 500 beneficiarios al año por medio de nuestros servicios.</span>
+              </p>
+              <div class="text-wrapper-12">LA DIFERENCIA</div>
+              <div class="text-wrapper-13">HACEMOS</div>
+            </div>
+          </div>
+          <div class="text-quienes-somos">
+            <div class="overlap-5">
+              <div class="grupo-quienes-somos">
+                <div class="overlap-group-3">
+                  <p class="text-wrapper-14">
+                    Trabajamos con el sector vulnerable de la población en zonas marginadas, de escasos recursos o
+                    simplemente discriminadas por alguna condición física, mental, generacional o económica,
+                    otorgándoles los conocimientos y herramientas para enfrentar a una comunidad que por años se ha
+                    visto afectada por una brecha social ocasionando condiciones injustas para este gran sector.
+                  </p>
+                  <p class="bajo-la-estructura">
+                    <span class="Texto_Normal">
+                      Bajo la estructura de una fundación hemos operado con este nuevo patronato a
+                    </span>
+                    <span class="text-wrapper-11">inicios del 2020</span>
+                    <span class="Texto_Normal">
+                      , que por cuestiones de pandemia nos vimos obligados a suspender el proyecto de ese año para
+                    </span>
+                    <span class="text-wrapper-11">retomar labores en el 2022</span>
+                    <span class="Texto_Normal">
+                      con una nueva idea surgida con base a los rezagos económicos que nos dejó el COVID-19.
+                    </span>
+                  </p>
+                  <p class="somos-una-instituci">
+                    <span class="Texto_Normal">Somos una </span>
+                    <span class="text-wrapper-11">Institución de Asistencia Privada</span>
+                    <span class="Texto_Normal"> sin fines de lucro creada en diciembre del </span>
+                    <span class="text-wrapper-11">2017</span>
+                    <span class="Texto_Normal">,&nbsp;&nbsp;y constituida como donataria autorizada en marzo del </span>
+                    <span class="text-wrapper-11">2019.<br /></span>
+                  </p>
+                  <div class="overlap-6">
+                    <img class="vector-quienes-somos" src="./img/QuienesSomos/vectorquienessomos.png" />
+                    <div class="text-wrapper-16">¿QUIÉNES<br/>SOMOS?</div>
+                  </div>
+                </div>
+              </div>
+              <img class="imagen-grup" src="./img/QuienesSomos/imagengrup.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <footer class="Pie_pagina">
+      <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+      <div class="Barra_De_Navegacion_Footer">
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Index')">INICIO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+        <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+      </div>
+      <div class="Grupo_Redes_Sociales">
+        <div class="Logo_X" onclick="RedirigirPagina('X')">
+          <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+          <span class="Nombre_RedSocial">TWITTER</span>
+        </div>
+        <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+          <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+          <span class="Nombre_RedSocial">INSTAGRAM</span>
+        </div>
+        <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+          <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+          <span class="Nombre_RedSocial">FACEBOOK</span>
+        </div>
+      </div>
+      <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+      <div class="Forma_Contacto">
+        <p class="Titulo_Contacto"><br>Contáctanos</p>
+        <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+        <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+        <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+      </div>
+      <div class="Dirrecion">
+        <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+      </div>
+    </footer>
+    <script src="./script/script_QuienesSomos.js"></script>
+  </body>
+</html>

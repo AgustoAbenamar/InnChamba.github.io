@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style_NuestroTrabajo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400,700">
+    <title>INN-CHAMBA</title>
+  </head>
+  <body>
+    <header>
+      <div class="Barra_Navegacion">
+          <img class="LogoINNCHAMBA" src="./img/LogoBox.svg">
+          <p class="Text_BarraNavegacion" onclick="Redirigir('Index')">INICIO</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+          <p class="Text_BarraNavegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+          <img class="BotonDonacionEspanol" onclick="RedirigirDonativos()" src="./img/img_Botones/BotonDonacionEspanol.svg" />
+          <div class="Boton_Idioma" onclick="MostrarMenuLenguaje()">
+              <img class="ImagenEspanol" id="BanderaActual" src="./img/img_Botones/BotonEspanol.png" />
+          </div>
+          
+          <div id="MenuLenguaje" class="Menu_Lenguaje">
+              <div class="Cerrar" onclick="OcultarMenuLenguaje()">✖</div>
+              <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('es')">
+                  <img src="./img/img_Botones/BotonEspanol.png" alt="Español" />
+                  <span>Español</span>
+              </div>
+              <div class="Lenguaje_Opcion" onclick="CambiarLenguaje('en')">
+                  <img src="./img/img_Botones/BotonIngles.png" alt="Inglés" />
+                  <span>Inglés</span>
+              </div>
+          </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="flex-row">
+        <div class="rectangle-inicio">
+          <div class="flex-row-ec">
+            <div class="imagen-mano"></div>
+            <div class="nuestro-trabajo-4">
+              <span class="nuestro-trabajo-5">NUESTRO </span
+              ><span class="trabajo">TRABAJO</span>
+            </div>
+          </div>
+        </div>
+        <div class="imagen-inicio"></div>
+      </div>
+      <div class="flex-row-f">
+        <div class="imagen-actividades"></div>
+        <div class="busca-cumplimiento-actividades">
+          <span class="busca-cumplimiento-objetivo"
+            >Busca dar cumplimiento a su objetivo por medio de sus </span
+          ><span class="actividades-asistenciales"
+            >actividades asistenciales</span
+          ><span class="como-son"> como son:</span>
+        </div>
+        <div class="imagen-mano-actividades"></div>
+        <div class="orientacion-social-educacion-capacitacion">
+          <span class="orientacion-social-educacion-capacitacion-6"
+            >ORIENTACIÓN SOCIAL, EDUCACIÓN Y CAPACITACIÓN PARA EL TRABAJO </span
+          ><span class="en-materia">en materia de:</span>
+        </div>
+        <span class="numero-1">1</span
+        ><span class="alimentacion-agricultura-recursos-ambientales"
+          >Alimentación, agricultura, aprovechamiento racional de los recursos
+          ambientales, educación ambiental y salud.</span
+        >
+        <div class="fomento-acciones-economia-popular">
+          <span class="fomento-acciones-economia-popular-7"
+            >FOMENTO DE ACCIONES PARA MEJORAR LA ECONOMÍA POPULAR. </span
+          ><span class="actos-asistenciales">Actos asistenciales:</span>
+        </div>
+        <span class="numero-2">2</span
+        ><span class="organizacion-talleres-proyectos-economia-popular"
+          >1.-Organización de talleres, foros y seminarios participativos.<br />2.-Dirigir
+          la planeación y acompañamiento de proyectos de mejora de la economía
+          popular</span
+        >
+      </div>
+      <div class="flex-row-bdc">
+        <span class="nuestros">NUESTROS</span
+        ><span class="programas">PROGRAMAS</span>
+      </div>
+      <div class="flex-row-dad">
+        <div class="imagen-sem"></div>
+        <div class="imagen-pit"></div>
+        <div class="imagen-esc"></div>
+      </div>
+      <div class="flex-row-cec">
+        <span class="sembrando-conocimiento"
+          >SEMBRANDO <br />CONOCIMIENTO 2020, 2021, Y 2022</span
+        ><span class="color-al-conocimiento"
+          >COLOR AL <br />CONOCIMIENTO 2020</span
+        ><span class="orientacion-social-aprovechamiento"
+          >ORIENTACION SOCIAL SOBR EL APROVECHAMIENTO DE FINANZAS BÁSICAS POST
+          PANDEMIA 2022 Y 20223</span
+        >
+      </div>
+      <div class="rectangle-cultivo">
+        <div class="imagen-cultivo"></div>
+        <div class="flex-column-a">
+          <span class="sembrando-conocimiento-8"
+            >SEMBRANDO CONOCIMIENTO<br/>2020, 2021, Y 2022</span
+          >
+          <div class="objetivo-general">
+            <span class="objetivo-general-9">Objetivo General:</span
+            ><span class="objetivo-general-a">
+              Proporcionar una herramienta técnico-metodológica para el
+              desarrollo de talleres de capacitación para personas interesadas
+              en temas agrícolas, especialmente en el uso de y manejo de
+              hidrogel; mediante la participación activa, que facilite el
+              aprendizaje de los participantes y ayuden a enriquecer su uso para
+              el trabajo.</span
+            >
+          </div>
+          <div class="objetivos-especificos">
+            <span class="objetivos-especificos-b">Objetivos Específicos:</span
+            ><span class="objetivos-especificos-c">
+              <br />1.- Facilitar actividades pedagógicas para la comprensión y
+              aprendizaje de los temas con relación a la agricultura.<br /><br />2.-
+              Proporcionar sugerencias metodológicas para las prácticas de
+              campo, especialmente aplicación de hidrogel.</span
+            >
+          </div>
+        </div>
+        <div class="flex-column-bbf">
+          <div class="punto-general"></div>
+          <div class="punto-especificos"></div>
+        </div>
+      </div>
+      <div class="rectangle-pintura">
+        <div class="imagen-pintura"></div>
+        <div class="flex-column-b">
+          <span class="color-al-conocimiento-d"
+            >COLOR AL<br/>CONOCIMIENTO 2020</span
+          >
+          <div class="objetivo-general-e">
+            <span class="objetivo-general-f">Objetivo General:</span
+            ><span class="objetivo-general-10">
+              Proporcionar a los alumnos un regreso a clases en aulas más
+              armónicas usando la técnica de la colorimetría para atender
+              problemáticas como el autismo, TDH, la falta de concentración y
+              acabar con los grafitis que puedan alterar las aulas académicas
+              luciendo como vandalismo.</span
+            >
+          </div>
+        </div>
+        <div class="punto-general-11"></div>
+      </div>
+      <div class="rectangle-escritura">
+        <div class="imagen-escritura"></div>
+        <div class="flex-column-f">
+          <span class="orientacion-social-aprovechamiento-12"
+            >ORIENTACIÓN SOCIAL SOBRE<br/>EL APROVECHAMIENTO DE<br/>FINANZAS BÁSICAS
+            POST<br/>PANDEMIA 2022 Y 2023</span
+          >
+          <div class="objetivo-general-13">
+            <span class="text-26">Objetivo General:</span
+            ><span class="programa-capacitando-mexico">
+              El programa capacitando México va encaminado a dar una solución al
+              problema económico que acecha a nuestro país desde hace años y se
+              ha potenciado aún más en tiempos de pandemia, así como la
+              detección de la falta de cultura del ahorro en nuevas generaciones
+              por falta de educación financiera básica.</span
+            >
+          </div>
+        </div>
+        <div class="punto-general-14"></div>
+      </div>
+      <div class="flex-row-ffc">
+        <div class="imagen-mano-iz"></div>
+        <div class="imagen-mano-de"></div>
+        <div class="lado-de"></div>
+        <div class="objetivos-sociales">
+          <span class="objetivos-sociales-15"
+            >De acuerdo con los objetivos sociales, </span
+          ><span class="inn-chamba-iap">INN CHAMBA I.A.P. </span
+          ><span class="orientacion-social"
+            >tiene como fin la orientación social, educación y capacitación para
+            el trabajo en materia de alimentación, agricultura, aprovechamiento
+            racional de los recursos ambientales, educación ambiental y salud,
+            así como el fomento de acciones para mejorar la economía popular
+            dirigido al sector social vulnerable como menores de edad, mujeres,
+            personas con capacidades diferentes y a la comunidad rural, lo
+            anterior por medio de talleres, foros y seminarios.</span
+          >
+        </div>
+        <div class="lado-iz"></div>
+        <div class="rectangle-cliente">
+          <div class="imagen-cliente"></div>
+          <div class="cursos-contacto">
+            <span class="cursos-contacto-16"
+              >SI BUSCAS BENEFICIARTE A TI O A TU GRUPO DE TRABAJO</span
+            ><span class="cursos-contacto-17">
+              CON ALGUNO DE NUESTROS CURSOS PONTE EN CONTACTO CON
+              NOSOTROS.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-implementar">
+        <div class="flex-column-c">
+          <span class="proyectos-buscamos"
+            >PRÓXIMOS PROYECTOS QUE BUSCAMOS </span
+          ><span class="implementar-2024">IMPLEMENTAR PARA EL 2024</span>
+          <div class="rectangle-incubadora">
+            <span class="incubadoras-emprendimiento"
+              >INCUBADORAS DE EMPRENDIMIENTO.</span
+            >
+          </div>
+          <span class="impulsaremos-economia-popular"
+            >Impulsaremos la economía popular por medio del acompañamiento de
+            pequeños emprendedores. Comenzaremos por otorgarles el conocimiento
+            básico en las áreas de finanzas, marketing, etc. con dichas
+            herramientas podrán ir creando desde cero su emprendimiento de la
+            mano de expertos en el tema, tomando la capacitación que consta de 6
+            sesiones de dos horas cada una, impartidas en el Centro de
+            Innovación e Inteligencia para el Desarrollo INN CHAMBA I.A.P. y al
+            término de la capacitación, a modo de prueba final se organizará por
+            parte de INN CHAMBA I.A.P. una expo donde podrán invitar a amigos y
+            familiares de cada uno de los beneficiados vendiendo sus productos o
+            servicios que desarrollaron durante todo el curso.</span
+          >
+          <div class="imagen-educar"></div>
+          <div class="rectangle-educar">
+            <span class="educar-proteger-ambiente"
+              >EDUCAR PARA PROTEGER AL AMBIENTE.</span
+            >
+          </div>
+        </div>
+        <div class="flex-column-bdf">
+          <div class="imagen-implementar"></div>
+          <span class="cuidado-medio-ambiente"
+            >Por medio de manuales y sesiones informativas, proporcionaremos las
+            alternativas que pondremos en marcha para el cuidado del medio
+            ambiente, por ejemplo; la forma correcta de plantar un árbol,
+            recolección de aguas pluviales, cosechas en casa, aprovechamiento de
+            recursos naturales, respeto a la vida animal (así como la
+            humanización de la sociedad para el respeto hacia la
+            naturaleza).</span
+          >
+        </div>
+      </div>
+    </div>
+    <footer class="Pie_pagina">
+      <img class="Imagen_GrupoReunion" src="./img/GrupoReunion.svg">
+
+      <div class="Barra_De_Navegacion_Footer">
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('Index')">INICIO</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('QuienesSomos')">¿QUIÉNES SOMOS?</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestraHistoria')">NUESTRA HISTORIA</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('NuestroTrabajo')">NUESTRO TRABAJO</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('ComoSumarte')">¿CÓMO SUMARTE?</p>
+          <p class="Text_Botones_Navegacion" onclick="Redirigir('Contacto')">CONTACTO</p>
+      </div>
+
+      <div class="Grupo_Redes_Sociales">
+          <div class="Logo_X" onclick="RedirigirPagina('X')">
+              <img src="./img/img_Redes_Sociales/LogoX.svg" alt="Logo de X" class="Logo">
+              <span class="Nombre_RedSocial">TWITTER</span>
+          </div>
+          <div class="Logo_Instagram" onclick="RedirigirPagina('Instagram')">
+              <img src="./img/img_Redes_Sociales/LogoInsta.svg" alt="Logo de Instagram" class="Logo">
+              <span class="Nombre_RedSocial">INSTAGRAM</span>
+          </div>
+          <div class="Logo_Facebook" onclick="RedirigirPagina('Facebook')">
+              <img src="./img/img_Redes_Sociales/LogoFacebook.svg" alt="Logo de Facebook" class="Logo">
+              <span class="Nombre_RedSocial">FACEBOOK</span>
+          </div>
+      </div>
+
+      <img class="Logo_INNCHAMBA" src="./img/LogoINNCHAMBA.svg">
+
+      <div class="Forma_Contacto">
+          <p class="Titulo_Contacto"><br>Contáctanos</p>
+          <p class="Text_Contacto"><br>Correo: contacto@innchamba.org.mx</p>
+          <p class="Text_Contacto"><br>Cel: +52 55 4860 0861</p>
+          <p class="Text_Contacto"><br>Oficina: 25 89 8695</p>
+      </div>
+
+      <div class="Dirrecion">
+          <p class="Dirrecion_INNCHAMBA">Bahía de Todos los Santos #143, Col. Verónica<br>Anzures, Miguel Hidalgo, CDMX, C.P. 11300</p>
+      </div>
+  </footer>
+  <script src="./script/script_NuestroTrabajo.js"></script>
+  </body>
+</html>

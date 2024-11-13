@@ -33,7 +33,7 @@ document.addEventListener('click', function(event) {
 });
 
 function RedirigirDonativos() {
-    window.location.href = "Inicio.html?scrollDonativos=true";
+    window.location.href = "index.html?scrollDonativos=true";
 }
 
 function RedirigirPagina(pagina) {
